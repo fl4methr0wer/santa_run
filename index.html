@@ -1,0 +1,98 @@
+<style> 
+body {
+    margin: 0;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+canvas{
+    margin: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;  
+    
+}
+.sprite{
+    display: none;
+}
+
+
+nav {
+    display: flex;
+    font-size: 5vh;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: 2vh;
+    padding: 0 5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    size: inherit;
+    }
+
+    nav div {
+        color: inherit;
+        text-decoration: none;
+        font-size: 40px;
+        font-weight: 800;
+        font-size: inherit;
+        font-family: inherit;
+
+    }
+    nav button {
+        background-color: black;
+        border: 0px;
+        width: 5vw;
+        height: 10vh;
+        color: inherit;
+        text-decoration: none;
+        font-size: 6vh;
+        font-weight: 800;
+        font-family: inherit;
+    }
+</style>
+
+
+<canvas> </canvas>
+
+
+<nav>
+    <div onclick="Control.startGame()"> Start </div>
+    <div style="display: inline-flexbox">
+        <div>Score:</div>
+        <div id="score"> </div> 
+    </div>
+    <button id="jumpButton "onclick="Control.jump()"> &#9673</button>
+</nav>
+
+
+<img class="sprite" id="backgroundSprite" src="./img/background.jpg">
+<img class="sprite" id="santaSprite" src="./img/santa.png">
+<img class="sprite" id="platformSprite" src="./img/platform.png">
+<img class="sprite" id="sleigSprite" src="./img/sleigh.png">
+<img class="sprite" id="snowmanSprite" src="./img/snowman.png">
+<img class="sprite" id="treeSprite" src="./img/tree.png">
+<img class="sprite" id="giftSprite" src="./img/gift.png">
+<img class="sprite" id="gameOverSprite" src="./img/gameOver.png">
+
+
+<img class="sprite" id="santa_anim1" src="./img/character/santa_anim1.png">
+<img class="sprite" id="santa_anim2" src="./img/character/santa_anim2.png">
+<img class="sprite" id="santa_anim3" src="./img/character/santa_anim3.png">
+<img class="sprite" id="santa_anim4" src="./img/character/santa_anim4.png">
+<img class="sprite" id="santa_anim5" src="./img/character/santa_anim5.png">
+<img class="sprite" id="santa_anim6" src="./img/character/santa_anim6.png">
+<img class="sprite" id="santa_anim7" src="./img/character/santa_anim7.png">
+<img class="sprite" id="santa_anim8" src="./img/character/santa_anim8.png">
+<img class="sprite" id="santa_anim9" src="./img/character/santa_anim9.png">
+<img class="sprite" id="santa_anim10" src="./img/character/santa_anim10.png">
+<img class="sprite" id="santa_anim11" src="./img/character/santa_anim11.png">
+
+
+<script src="index.js"> </script>
